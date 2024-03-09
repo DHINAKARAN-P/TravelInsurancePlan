@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CarInsurance {
+public class CarInsurance  {
 	WebDriver driver;
 	JavascriptExecutor js;
 	Actions act;
@@ -18,6 +18,7 @@ public class CarInsurance {
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
+
 	}
 	
 	//-------------------------->WebElements
@@ -83,10 +84,10 @@ public class CarInsurance {
 	
 	public void click_car_insurace()
 	{
-		js=(JavascriptExecutor)driver;
-		js.executeScript("scrollBy(0,500)");
 		Car_insurance_logo.click();
 	}
+	
+
 
 	public void click_buying_new_car()
 	{

@@ -8,7 +8,6 @@ import PageObject.CarInsurance;
 
 public class TestCar extends BasePage{
 	CarInsurance obj2;
-
 	@Test(priority=12,groups = {"smoke Test Two"})
 	public void open_car_insurance()
 	{
@@ -35,27 +34,33 @@ public class TestCar extends BasePage{
 	{
 		obj2.enter_name();
 		obj2.enter_invalid_email();
-		System.out.println(obj2.get_email_errorMessage());
+		System.out.println(obj2.get_email_errorMessage());	
+	
 	
 	}
 	@Test(priority=15,groups= {"regression Test Two"})
 	public void enter_valid_email() throws IOException, InterruptedException
 	{
-		
+
 		obj2.enter_valid_email();
 		obj2.send_mob_No();
 		obj2.click_view_prices();
+		
+		
+		
+	}
+	
+	@Test(priority=16)
+	public void getting_quote()
+	{
 		obj2.click_Next_7_Days();
 		obj2.enter_car_price();
 		obj2.click_submit_button();
 		obj2.click_first_insurance();
 		String s=obj2.getInsuranceQuote();
 		System.out.println(s);
-		
-		
 	}
-	
-	@Test(priority=16)
+	@Test(priority=17)
 	public void go_to_HomePage()
 	{
 		obj2.click_logo();

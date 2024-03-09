@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -60,22 +61,22 @@ public class BaseClass{
 				switch(getProperties().getProperty("browser").toLowerCase()) 
 				{
 				case "chrome":
-//					ChromeOptions option = new ChromeOptions();
-//					option.addArguments("--disable-blink-features=AutomationControlled");
-//					option.addArguments("--disable-notifications");
-//					driver=new ChromeDriver(option); 
-					driver = new ChromeDriver();
-			        break;
-			    case "edge":
-			    	driver=new EdgeDriver();
-			        break;
+					ChromeOptions chrome = new ChromeOptions();
+					chrome.addArguments("--disable-notifications");
+					driver=new ChromeDriver(chrome); 
+					break;
+				case "edge": 
+					EdgeOptions edge = new EdgeOptions();
+					edge.addArguments("--disable-notifications");
+					driver=new EdgeDriver(edge); 
+					break;
 			    default:
 			        System.out.println("No matching browser");
 			        driver=null;
 				}
 			}
 		 driver.manage().deleteAllCookies(); 
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		 
 		 return driver;
 		 

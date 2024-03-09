@@ -16,7 +16,7 @@ public class Hooks {
 	 static WebDriver driver;
 	 static Properties p;
 	 
-	@Before
+	@BeforeAll
     public static  void init() throws IOException
     {
 		System.out.println("---------initializing------");
@@ -29,7 +29,7 @@ public class Hooks {
     			
 	}
 	
-    @After
+    @AfterAll
     public static void close() throws IOException { 		
     	driver.quit();
     }

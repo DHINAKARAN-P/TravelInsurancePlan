@@ -7,11 +7,13 @@
   
   <test thread-count="5" name="Test">
   <parameter name="os" value="windows" />
-  <parameter name="browser" value="edge"/>
+  <parameter name="browser" value="chrome"/>
     <classes>
+      
       <class name="TestCase.TestTravel"/>
       <class name="TestCase.TestCar"/>
       <class name="TestCase.TestHealth"/>
+
       
       
     </classes>

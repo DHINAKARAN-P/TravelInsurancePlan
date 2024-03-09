@@ -63,7 +63,7 @@ public class TravelInsurance {
 	@FindBy(xpath="//*[text()='View plans']")
 	WebElement view_plan;
 	
-	@FindBy(id="mobileNumber")
+	@FindBy(xpath="//input[@id=\"mobileNumber\"]")
 	WebElement mob;
 	
 	@FindBy(xpath="//input[@id=\"studentTrip\"]")
@@ -94,8 +94,9 @@ public class TravelInsurance {
 	
 	public void clickTravelInsurance()
 	{
-		js.executeScript("scrollBy(0,500)");
+
 		travelInsurance.click();
+		
 	}
 	
 	public void sndCountry()
@@ -165,7 +166,7 @@ public class TravelInsurance {
 	
 	public void select_student_plans()
 	{
-		student_radio.click();
+		js.executeScript("arguments[0].click()", student_radio);
 	}
 	
 	public void students_check()

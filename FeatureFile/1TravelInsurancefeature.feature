@@ -1,5 +1,6 @@
 Feature: Finding Travel Insurance For Two Students
 
+  @regression
   Scenario: Get Three Company names for the
     Given the user clicks on the policy bazar page
     When the user clicks the travel insurance

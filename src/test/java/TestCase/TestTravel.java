@@ -70,11 +70,6 @@ public class TestTravel extends BasePage {
 		obj1.Select_Duration();
 		obj1.Apply();
 	}
-	@Test(priority=9,groups= {"regression Test One"})
-	public void Apply()
-	{
-		
-	}
 
 	@Test(priority=10,groups= {"regression Test One"})
 	public void print_First_Three_companies() throws InterruptedException

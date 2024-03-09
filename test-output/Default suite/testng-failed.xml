@@ -5,7 +5,7 @@
     <classes>
       <class name="TestCase.TestCar">
         <methods>
-          <include name="enter_invalid_email"/>
+          <include name="getting_quote"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>

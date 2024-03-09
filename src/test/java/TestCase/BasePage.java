@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Properties;
 
@@ -17,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -76,19 +78,21 @@ public class BasePage {
 			switch(browser.toLowerCase())
 			{
 			case "chrome":
-//				ChromeOptions option = new ChromeOptions();
-//				option.addArguments("--disable-blink-features=AutomationControlled");
-//				option.addArguments("--disable-notifications");
-//				driver=new ChromeDriver(option); 
-				driver=new ChromeDriver();
+				ChromeOptions chrome = new ChromeOptions();
+				chrome.addArguments("--disable-notifications");
+				driver=new ChromeDriver(chrome); 
 				break;
-			case "edge": driver=new EdgeDriver(); break;
+			case "edge": 
+				EdgeOptions edge = new EdgeOptions();
+				edge.addArguments("--disable-notifications");
+				driver=new EdgeDriver(edge); 
+				break;
 			default: System.out.println("No matching browser..");
 						return;
 			}
 		}
 		  
-		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		  driver.navigate().to(p.getProperty("URL"));
 		  driver.manage().window().maximize();
 		  driver.manage().deleteAllCookies();
