@@ -9,7 +9,7 @@ public class TestHealth extends BasePage {
 	List<String>list_health_insurances;
 	HealthInsurance obj3;
 
-	@Test(priority=17,groups= {"regression Test Three"})
+	@Test(priority=18,groups= {"regression Test Three"})
 	public void entering_health_insurance_details()
 	{
 		obj3=new HealthInsurance(driver);

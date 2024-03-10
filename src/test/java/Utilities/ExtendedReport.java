@@ -45,6 +45,7 @@ public class ExtendedReport implements ITestListener{
  
 	public void onTestSuccess(ITestResult result) {
 		test = extent.createTest(result.getTestClass().getName());
+		test.log(Status.PASS, result.getName()+" got successfully executed...");
 		try {
 			String imgPath = BasePage.captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imgPath);

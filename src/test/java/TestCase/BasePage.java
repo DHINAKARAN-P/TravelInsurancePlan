@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.Properties;
 
@@ -23,17 +22,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-
 import Utilities.Excel;
 
 public class BasePage {
 	public  static WebDriver driver;
 	public Properties p;
 	
-	 @BeforeTest(alwaysRun = true)
-	 @Parameters({"os","browser"})
-	  public void beforeClass(String os,String browser) throws InterruptedException, IOException {
+	 @BeforeTest
+	  public void beforeClass() throws InterruptedException, IOException {
 		 FileReader file=new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 		 p=new Properties();
 		 p.load(file);
@@ -47,11 +43,11 @@ public class BasePage {
 			DesiredCapabilities capabilities=new DesiredCapabilities(option);
 			
 			//os
-			if(os.equalsIgnoreCase("windows"))
+			if(p.getProperty("os").equalsIgnoreCase("windows"))
 			{
 				capabilities.setPlatform(Platform.WIN11);
 			}
-			else if(os.equalsIgnoreCase("mac"))
+			else if(p.getProperty("os").equalsIgnoreCase("mac"))
 			{
 				capabilities.setPlatform(Platform.MAC);
 			}
@@ -62,7 +58,7 @@ public class BasePage {
 			}
 			
 			//browser
-			switch(browser.toLowerCase())
+			switch(p.getProperty("browser").toLowerCase())
 			{
 			case "chrome" : capabilities.setBrowserName("chrome"); break;
 			case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
@@ -75,7 +71,7 @@ public class BasePage {
 		else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
 		{
 			//launching browser based on condition - locally
-			switch(browser.toLowerCase())
+			switch(p.getProperty("browser").toLowerCase())
 			{
 			case "chrome":
 				ChromeOptions chrome = new ChromeOptions();
@@ -92,7 +88,7 @@ public class BasePage {
 			}
 		}
 		  
-		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		  driver.navigate().to(p.getProperty("URL"));
 		  driver.manage().window().maximize();
 		  driver.manage().deleteAllCookies();

@@ -6,11 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HealthInsurance {
 	WebDriver driver;
 	Actions act;
 	List<String> temp;  
+	WebDriverWait wait;
 	public HealthInsurance(WebDriver driver)
 	{
 		this.driver=driver;

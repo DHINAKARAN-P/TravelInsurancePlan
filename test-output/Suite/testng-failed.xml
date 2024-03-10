@@ -5,22 +5,12 @@
     <listener class-name="Utilities.ExtendedReport"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="os" value="windows"/>
-    <parameter name="browser" value="edge"/>
     <classes>
       <class name="TestCase.TestTravel">
         <methods>
-          <include name="enter_mob_no"/>
-          <include name="select_destination"/>
-          <include name="press_no"/>
-          <include name="select_Date"/>
-          <include name="open_travel_insurance"/>
           <include name="beforeClass"/>
           <include name="print_First_Three_companies"/>
-          <include name="select_student_plans"/>
-          <include name="drop_1"/>
           <include name="afterClass"/>
-          <include name="Select_Duration"/>
         </methods>
       </class> <!-- TestCase.TestTravel -->
     </classes>

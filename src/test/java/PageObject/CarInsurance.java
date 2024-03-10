@@ -1,5 +1,7 @@
 package PageObject;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -7,12 +9,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CarInsurance  {
 	WebDriver driver;
 	JavascriptExecutor js;
 	Actions act;
 	public String s1;
+	WebDriverWait wait;
 	
 	public CarInsurance(WebDriver driver)
 	{
@@ -84,6 +89,8 @@ public class CarInsurance  {
 	
 	public void click_car_insurace()
 	{
+		wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(Car_insurance_logo));
 		Car_insurance_logo.click();
 	}
 	
@@ -194,7 +201,7 @@ public class CarInsurance  {
 	
 	public void click_logo()
 	{
-	logo.click();	
+	logo.click();;
 	}
 	
 }

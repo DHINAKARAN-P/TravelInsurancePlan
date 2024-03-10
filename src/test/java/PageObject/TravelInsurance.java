@@ -1,5 +1,7 @@
 package PageObject;
 
+import java.time.Duration;
+
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,19 +9,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import  Utilities.Excel;
 
 public class TravelInsurance {
 	WebDriver driver;
 	JavascriptExecutor js;
+	WebDriverWait wait ;
 	
 	public TravelInsurance(WebDriver driver)
 	{
 		this.driver=driver;
 		js=(JavascriptExecutor)driver;
 		PageFactory.initElements(driver,this);
+		
 	}
 	
 	//---------------------------->WebElements
@@ -94,7 +100,8 @@ public class TravelInsurance {
 	
 	public void clickTravelInsurance()
 	{
-
+		wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(travelInsurance));
 		travelInsurance.click();
 		
 	}
@@ -188,8 +195,8 @@ public class TravelInsurance {
 	
 	public void select_low_to_high() throws InterruptedException
 	{
-	sort_by.click();
-	low_radio.click();
+		js.executeScript("arguments[0].click()", sort_by);
+		js.executeScript("arguments[0].click()", low_radio);
 	Thread.sleep(3000);
 	
 	}
