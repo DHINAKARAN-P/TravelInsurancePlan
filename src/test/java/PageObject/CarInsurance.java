@@ -12,12 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CarInsurance  {
-	WebDriver driver;
-	JavascriptExecutor js;
-	Actions act;
-	public String s1;
-	WebDriverWait wait;
+public class CarInsurance {
 	
 	public CarInsurance(WebDriver driver)
 	{
@@ -25,6 +20,12 @@ public class CarInsurance  {
 		PageFactory.initElements(driver,this);
 
 	}
+	WebDriver driver;
+	JavascriptExecutor js;
+	Actions act;
+	public String s1;
+	WebDriverWait wait;
+
 	
 	//-------------------------->WebElements
 	

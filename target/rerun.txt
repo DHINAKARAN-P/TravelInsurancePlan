@@ -1,2 +1,0 @@
-file:FeatureFile/2carInsurancefeature.feature:4
-file:FeatureFile/3HealthInsurancefeature.feature:4

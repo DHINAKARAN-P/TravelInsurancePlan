@@ -16,14 +16,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import  Utilities.Excel;
 
 public class TravelInsurance {
-	WebDriver driver;
-	JavascriptExecutor js;
-	WebDriverWait wait ;
 	
-	public TravelInsurance(WebDriver driver)
+WebDriver driver;
+ JavascriptExecutor js;
+ WebDriverWait wait ;
+	public TravelInsurance(WebDriver driver) 
 	{
 		this.driver=driver;
-		js=(JavascriptExecutor)driver;
 		PageFactory.initElements(driver,this);
 		
 	}
@@ -118,6 +117,7 @@ public class TravelInsurance {
 	
 	public void clickNext()
 	{
+		js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",next);
 		
 	}
@@ -178,8 +178,9 @@ public class TravelInsurance {
 	
 	public void students_check()
 	{
-		check_student1.click();
-		check_student2.click();
+		js.executeScript("arguments[0].click()",check_student1);
+		js.executeScript("arguments[0].click()",check_student2);
+	
 	}
 	
 	public void Select_Duration()

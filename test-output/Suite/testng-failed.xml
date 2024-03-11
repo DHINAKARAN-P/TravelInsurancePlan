@@ -9,8 +9,8 @@
       <class name="TestCase.TestTravel">
         <methods>
           <include name="beforeClass"/>
-          <include name="print_First_Three_companies"/>
           <include name="afterClass"/>
+          <include name="Select_Duration"/>
         </methods>
       </class> <!-- TestCase.TestTravel -->
     </classes>

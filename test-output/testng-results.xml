@@ -2,112 +2,124 @@
 <testng-results ignored="4" total="21" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-10T21:42:09 IST" name="Suite" finished-at="2024-03-10T21:43:11 IST" duration-ms="61543">
+  <suite started-at="2024-03-12T00:05:17 IST" name="Suite" finished-at="2024-03-12T00:06:18 IST" duration-ms="61312">
     <groups>
       <group name="smoke Test one">
-        <method signature="TestTravel.open_travel_insurance()[pri:1, instance:TestCase.TestTravel@9597028]" name="open_travel_insurance" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.open_travel_insurance()[pri:1, instance:TestCase.TestTravel@7d8995e]" name="open_travel_insurance" class="TestCase.TestTravel"/>
       </group> <!-- smoke Test one -->
       <group name="regression Test One">
-        <method signature="TestTravel.Select_Duration()[pri:8, instance:TestCase.TestTravel@9597028]" name="Select_Duration" class="TestCase.TestTravel"/>
-        <method signature="TestTravel.drop_1()[pri:4, instance:TestCase.TestTravel@9597028]" name="drop_1" class="TestCase.TestTravel"/>
-        <method signature="TestTravel.print_First_Three_companies()[pri:10, instance:TestCase.TestTravel@9597028]" name="print_First_Three_companies" class="TestCase.TestTravel"/>
-        <method signature="TestTravel.select_destination()[pri:2, instance:TestCase.TestTravel@9597028]" name="select_destination" class="TestCase.TestTravel"/>
-        <method signature="TestTravel.select_student_plans()[pri:7, instance:TestCase.TestTravel@9597028]" name="select_student_plans" class="TestCase.TestTravel"/>
-        <method signature="TestTravel.enter_mob_no()[pri:6, instance:TestCase.TestTravel@9597028]" name="enter_mob_no" class="TestCase.TestTravel"/>
-        <method signature="TestTravel.press_no()[pri:5, instance:TestCase.TestTravel@9597028]" name="press_no" class="TestCase.TestTravel"/>
-        <method signature="TestTravel.select_Date()[pri:3, instance:TestCase.TestTravel@9597028]" name="select_Date" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.Select_Duration()[pri:8, instance:TestCase.TestTravel@7d8995e]" name="Select_Duration" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.drop_1()[pri:4, instance:TestCase.TestTravel@7d8995e]" name="drop_1" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.enter_mob_no()[pri:6, instance:TestCase.TestTravel@7d8995e]" name="enter_mob_no" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.print_First_Three_companies()[pri:10, instance:TestCase.TestTravel@7d8995e]" name="print_First_Three_companies" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.select_destination()[pri:2, instance:TestCase.TestTravel@7d8995e]" name="select_destination" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.select_student_plans()[pri:7, instance:TestCase.TestTravel@7d8995e]" name="select_student_plans" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.press_no()[pri:5, instance:TestCase.TestTravel@7d8995e]" name="press_no" class="TestCase.TestTravel"/>
+        <method signature="TestTravel.select_Date()[pri:3, instance:TestCase.TestTravel@7d8995e]" name="select_Date" class="TestCase.TestTravel"/>
       </group> <!-- regression Test One -->
       <group name="regression Test Three">
-        <method signature="TestHealth.entering_health_insurance_details()[pri:18, instance:TestCase.TestHealth@2f9f7dcf]" name="entering_health_insurance_details" class="TestCase.TestHealth"/>
+        <method signature="TestHealth.entering_health_insurance_details()[pri:18, instance:TestCase.TestHealth@409bf450]" name="entering_health_insurance_details" class="TestCase.TestHealth"/>
       </group> <!-- regression Test Three -->
       <group name="smoke Test Two">
-        <method signature="TestCar.open_car_insurance()[pri:12, instance:TestCase.TestCar@5b8dfcc1]" name="open_car_insurance" class="TestCase.TestCar"/>
+        <method signature="TestCar.open_car_insurance()[pri:12, instance:TestCase.TestCar@3349e9bb]" name="open_car_insurance" class="TestCase.TestCar"/>
       </group> <!-- smoke Test Two -->
       <group name="regression Test Two">
-        <method signature="TestCar.enter_invalid_email()[pri:14, instance:TestCase.TestCar@5b8dfcc1]" name="enter_invalid_email" class="TestCase.TestCar"/>
-        <method signature="TestCar.enter_valid_email()[pri:15, instance:TestCase.TestCar@5b8dfcc1]" name="enter_valid_email" class="TestCase.TestCar"/>
-        <method signature="TestCar.enter_new_car_details()[pri:13, instance:TestCase.TestCar@5b8dfcc1]" name="enter_new_car_details" class="TestCase.TestCar"/>
+        <method signature="TestCar.enter_invalid_email()[pri:14, instance:TestCase.TestCar@3349e9bb]" name="enter_invalid_email" class="TestCase.TestCar"/>
+        <method signature="TestCar.enter_valid_email()[pri:15, instance:TestCase.TestCar@3349e9bb]" name="enter_valid_email" class="TestCase.TestCar"/>
+        <method signature="TestCar.enter_new_car_details()[pri:13, instance:TestCase.TestCar@3349e9bb]" name="enter_new_car_details" class="TestCase.TestCar"/>
       </group> <!-- regression Test Two -->
     </groups>
-    <test started-at="2024-03-10T21:42:09 IST" name="Test" finished-at="2024-03-10T21:43:11 IST" duration-ms="61543">
+    <test started-at="2024-03-12T00:05:17 IST" name="Test" finished-at="2024-03-12T00:06:18 IST" duration-ms="61312">
       <class name="TestCase.TestHealth">
-        <test-method signature="entering_health_insurance_details()[pri:18, instance:TestCase.TestHealth@2f9f7dcf]" started-at="2024-03-10T21:43:05 IST" name="entering_health_insurance_details" finished-at="2024-03-10T21:43:05 IST" duration-ms="440" status="PASS">
+        <test-method signature="entering_health_insurance_details()[pri:18, instance:TestCase.TestHealth@409bf450]" started-at="2024-03-12T00:06:12 IST" name="entering_health_insurance_details" finished-at="2024-03-12T00:06:13 IST" duration-ms="468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- entering_health_insurance_details -->
       </class> <!-- TestCase.TestHealth -->
       <class name="TestCase.TestCar">
-        <test-method signature="open_car_insurance()[pri:12, instance:TestCase.TestCar@5b8dfcc1]" started-at="2024-03-10T21:42:49 IST" name="open_car_insurance" finished-at="2024-03-10T21:42:49 IST" duration-ms="256" status="PASS">
+        <test-method signature="open_car_insurance()[pri:12, instance:TestCase.TestCar@3349e9bb]" started-at="2024-03-12T00:05:56 IST" name="open_car_insurance" finished-at="2024-03-12T00:05:56 IST" duration-ms="366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_car_insurance -->
-        <test-method signature="enter_new_car_details()[pri:13, instance:TestCase.TestCar@5b8dfcc1]" started-at="2024-03-10T21:42:49 IST" name="enter_new_car_details" depends-on-groups="smoke Test Two" finished-at="2024-03-10T21:42:54 IST" duration-ms="4774" status="PASS">
+        <test-method signature="enter_new_car_details()[pri:13, instance:TestCase.TestCar@3349e9bb]" started-at="2024-03-12T00:05:57 IST" name="enter_new_car_details" depends-on-groups="smoke Test Two" finished-at="2024-03-12T00:06:02 IST" duration-ms="5129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enter_new_car_details -->
-        <test-method signature="enter_invalid_email()[pri:14, instance:TestCase.TestCar@5b8dfcc1]" started-at="2024-03-10T21:42:54 IST" name="enter_invalid_email" finished-at="2024-03-10T21:42:55 IST" duration-ms="505" status="PASS">
+        <test-method signature="enter_invalid_email()[pri:14, instance:TestCase.TestCar@3349e9bb]" started-at="2024-03-12T00:06:02 IST" name="enter_invalid_email" finished-at="2024-03-12T00:06:03 IST" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enter_invalid_email -->
-        <test-method signature="enter_valid_email()[pri:15, instance:TestCase.TestCar@5b8dfcc1]" started-at="2024-03-10T21:42:55 IST" name="enter_valid_email" finished-at="2024-03-10T21:42:56 IST" duration-ms="628" status="PASS">
+        <test-method signature="enter_valid_email()[pri:15, instance:TestCase.TestCar@3349e9bb]" started-at="2024-03-12T00:06:03 IST" name="enter_valid_email" finished-at="2024-03-12T00:06:04 IST" duration-ms="718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enter_valid_email -->
-        <test-method signature="getting_quote()[pri:16, instance:TestCase.TestCar@5b8dfcc1]" started-at="2024-03-10T21:42:56 IST" name="getting_quote" finished-at="2024-03-10T21:43:02 IST" duration-ms="6336" status="PASS">
+        <test-method signature="getting_quote()[pri:16, instance:TestCase.TestCar@3349e9bb]" started-at="2024-03-12T00:06:04 IST" name="getting_quote" finished-at="2024-03-12T00:06:10 IST" duration-ms="5929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getting_quote -->
-        <test-method signature="go_to_HomePage()[pri:17, instance:TestCase.TestCar@5b8dfcc1]" started-at="2024-03-10T21:43:03 IST" name="go_to_HomePage" finished-at="2024-03-10T21:43:04 IST" duration-ms="1808" status="PASS">
+        <test-method signature="go_to_HomePage()[pri:17, instance:TestCase.TestCar@3349e9bb]" started-at="2024-03-12T00:06:10 IST" name="go_to_HomePage" finished-at="2024-03-12T00:06:12 IST" duration-ms="1714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- go_to_HomePage -->
       </class> <!-- TestCase.TestCar -->
       <class name="TestCase.TestTravel">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:10 IST" name="beforeClass" finished-at="2024-03-10T21:42:22 IST" duration-ms="12189" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:17 IST" name="beforeClass" finished-at="2024-03-12T00:05:30 IST" duration-ms="13069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="open_travel_insurance()[pri:1, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:22 IST" name="open_travel_insurance" finished-at="2024-03-10T21:42:22 IST" duration-ms="475" status="PASS">
+        <test-method signature="open_travel_insurance()[pri:1, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:30 IST" name="open_travel_insurance" finished-at="2024-03-12T00:05:31 IST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_travel_insurance -->
-        <test-method signature="select_destination()[pri:2, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:23 IST" name="select_destination" depends-on-groups="smoke Test one" finished-at="2024-03-10T21:42:26 IST" duration-ms="3302" status="PASS">
+        <test-method signature="select_destination()[pri:2, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:31 IST" name="select_destination" depends-on-groups="smoke Test one" finished-at="2024-03-12T00:05:35 IST" duration-ms="3225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_destination -->
-        <test-method signature="select_Date()[pri:3, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:26 IST" name="select_Date" finished-at="2024-03-10T21:42:33 IST" duration-ms="6431" status="PASS">
+        <test-method signature="select_Date()[pri:3, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:35 IST" name="select_Date" finished-at="2024-03-12T00:05:41 IST" duration-ms="6293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_Date -->
-        <test-method signature="drop_1()[pri:4, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:33 IST" name="drop_1" finished-at="2024-03-10T21:42:35 IST" duration-ms="1630" status="PASS">
+        <test-method signature="drop_1()[pri:4, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:42 IST" name="drop_1" finished-at="2024-03-12T00:05:43 IST" duration-ms="1238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- drop_1 -->
-        <test-method signature="press_no()[pri:5, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:35 IST" name="press_no" finished-at="2024-03-10T21:42:36 IST" duration-ms="574" status="PASS">
+        <test-method signature="press_no()[pri:5, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:43 IST" name="press_no" finished-at="2024-03-12T00:05:44 IST" duration-ms="617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- press_no -->
-        <test-method signature="enter_mob_no()[pri:6, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:36 IST" name="enter_mob_no" finished-at="2024-03-10T21:42:37 IST" duration-ms="1024" status="PASS">
+        <test-method signature="enter_mob_no()[pri:6, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:44 IST" name="enter_mob_no" finished-at="2024-03-12T00:05:46 IST" duration-ms="1334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enter_mob_no -->
-        <test-method signature="select_student_plans()[pri:7, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:38 IST" name="select_student_plans" finished-at="2024-03-10T21:42:40 IST" duration-ms="2291" status="PASS">
+        <test-method signature="select_student_plans()[pri:7, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:46 IST" name="select_student_plans" finished-at="2024-03-12T00:05:47 IST" duration-ms="1445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_student_plans -->
-        <test-method signature="Select_Duration()[pri:8, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:40 IST" name="Select_Duration" finished-at="2024-03-10T21:42:41 IST" duration-ms="977" status="PASS">
+        <test-method signature="Select_Duration()[pri:8, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:48 IST" name="Select_Duration" finished-at="2024-03-12T00:05:50 IST" duration-ms="1323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_Duration -->
-        <test-method signature="print_First_Three_companies()[pri:10, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:42 IST" name="print_First_Three_companies" finished-at="2024-03-10T21:42:46 IST" duration-ms="4268" status="PASS">
+        <test-method signature="print_First_Three_companies()[pri:10, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:50 IST" name="print_First_Three_companies" finished-at="2024-03-12T00:05:54 IST" duration-ms="3683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- print_First_Three_companies -->
-        <test-method signature="go_To_Home_Page()[pri:11, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:42:46 IST" name="go_To_Home_Page" finished-at="2024-03-10T21:42:48 IST" duration-ms="1593" status="PASS">
+        <test-method signature="go_To_Home_Page()[pri:11, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:05:54 IST" name="go_To_Home_Page" finished-at="2024-03-12T00:05:55 IST" duration-ms="1321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- go_To_Home_Page -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestCase.TestTravel@9597028]" started-at="2024-03-10T21:43:05 IST" name="afterClass" finished-at="2024-03-10T21:43:11 IST" duration-ms="5102" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestCase.TestTravel@7d8995e]" started-at="2024-03-12T00:06:13 IST" name="afterClass" finished-at="2024-03-12T00:06:18 IST" duration-ms="5369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

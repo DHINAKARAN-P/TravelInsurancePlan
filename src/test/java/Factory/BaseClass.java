@@ -95,7 +95,7 @@ public class BaseClass{
 		return p;
 	}
 	
-	public static Logger getLogger() 
+	public  static Logger getLogger() 
 	{		 
 		logger=LogManager.getLogger(); //Log4j
 		return logger;

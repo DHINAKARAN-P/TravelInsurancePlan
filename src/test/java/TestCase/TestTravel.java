@@ -1,10 +1,10 @@
 package TestCase;
 
 import org.testng.annotations.Test;
+
 import PageObject.TravelInsurance;
 
 public class TestTravel extends BasePage {
-
 	TravelInsurance obj1;
 	
 	@Test(priority=1,groups = {"smoke Test one"})

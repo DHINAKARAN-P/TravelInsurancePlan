@@ -17,7 +17,7 @@
 		</run>
 	</groups>
     <classes>
-      <class name="TestCases.Tests"/>
+      <class name="TestCase.TestTravel"/>
     </classes>
   </test> <!-- Grouping -->
 </suite> <!-- Suite -->
